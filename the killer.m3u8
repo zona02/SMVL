@@ -1,7 +1,7 @@
 #EXTM3U
 #EXT-X-VERSION:3
 
-#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",LANGUAGE="es",NAME="Español",DEFAULT=YES,AUTOSELECT=YES,URI="https://dl.dropboxusercontent.com/scl/fi/tq4mygsdud0lkv67hqq15/KUMARIBO-spa.vtt?rlkey=me9w4ebv1twu2cznpmzzbu3ut&st=806d74oh&dl=0"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",LANGUAGE="es",NAME="Español",DEFAULT=YES,AUTOSELECT=YES,URI="https://dl.dropboxusercontent.com/scl/fi/tq4mygsdud0lkv67hqq15/KUMARIBO-spa.vtt?rlkey=me9w4ebv1twu2cznpmzzbu3ut&st=806d74oh&dl=1"
 
 #EXT-X-STREAM-INF:BANDWIDTH=800000,RESOLUTION=640x360,SUBTITLES="subs"
 https://www.terabox.com/share/extstreaming.m3u8?uk=4400793594669&shareid=41886210002&type=M3U8_AUTO_360&fid=813090282303968&sign=c7f01b01a71fbedfae38dec291636aee8fef3103&timestamp=1728531579&jsToken=C1E5CC0E89B4A8CB04368020CAC21755FFC8593A53F194E7FF25E65FEF163C8907B15FF053ED63D33B52623D60A7EBCF28F2E77EECA118E2148EBAD25FC660E1&esl=1&isplayer=1&ehps=1&clienttype=0&app_id=250528&web=1&channel=dubox
