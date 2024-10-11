@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://wallpapers.com/images/hd/terraria-dark-woods-nppvbaabtj8ivck9.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, .title {
+    overflow: auto;
+    background-color: grey;
+    text-align: center;
+    font-size: 3em;
+    background: linear-gradient(90deg, black, darkred, firebrick, orange, gold, yellow, lime, green, teal, navy, blue, purple, magenta, red, crimson, darkorange, darkviolet, darkblue, darkgreen, darkcyan);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: discoText 5s linear infinite;
+    background-size: 300%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px black;
+}
+
+@keyframes discoText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.video-container {
+    width: 64%;
+    height: 62vh;
+    border: 3px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: url('https://th.bing.com/th/id/OIG3.m0ZBmc1jFPHn_ywipmMJ?pid=ImgGn');
+    background-size: cover;
+    background-position: center;
+}
+
+.description {
+    overflow: auto;
+    background-color: grey;
+    padding: 10px;
+    height: auto;
+    width: 64%;
+    color: white;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.synopsis, .warning {
+    margin-top: 10px;
+    color: blue;
+}
+
+.terabox-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    background: linear-gradient(90deg, yellow, blue, red, white);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 5s infinite linear;
+}
+
+@keyframes flow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.navigation button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.iframe-name {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    color: transparent; /* Oculta el texto original */
+}
+
+.iframe-name::after {
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+    background: linear-gradient(90deg, black, darkred, firebrick, orange, gold, yellow, lime, green, teal, navy, blue, purple, magenta, red, crimson, darkorange, darkviolet, darkblue, darkgreen, darkcyan);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px black;
+    width: 50%; /* Ajusta el ancho para que el texto sea más visible */
+    left: 0; /* Asegura que el texto comience desde el principio */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 600px) {
+    .video-container {
+        height: 30vh;
+        width: 48vh;
+    }
+    .description {
+        width: 90%;
+    }
+    h1, .title {
+        font-size: 2em;
+    }
+    .navigation button {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+    .iframe-name {
+        font-size: 1.5em;
+    }
+}
